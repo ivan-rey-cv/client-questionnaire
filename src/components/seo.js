@@ -27,8 +27,6 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  console.log(site.siteMetadata.title, title)
-
   return (
     <Helmet
       htmlAttributes={{

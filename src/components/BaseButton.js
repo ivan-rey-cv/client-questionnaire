@@ -5,7 +5,9 @@ function BaseButton(props) {
   return <Button {...props} />
 }
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  tabIndex: 0,
+})`
   font-family: inherit;
   font-size: inherit;
   letter-spacing: calc(1rem / 8);

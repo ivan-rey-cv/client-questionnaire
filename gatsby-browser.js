@@ -1,7 +1,17 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// This component will be the parent component of every page components
 
-// You can delete this file if you're not using it
+import React from 'react'
+import GlobalStyle from './src/GlobalStyle'
+import AppProviders from './src/context'
+
+export const wrapRootElement = ({ element }) => {
+  console.count('Global Wrapper')
+
+  return (
+    <>
+      <GlobalStyle />
+
+      <AppProviders>{element}</AppProviders>
+    </>
+  )
+}

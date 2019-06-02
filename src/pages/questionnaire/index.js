@@ -5,7 +5,7 @@ import SEO from '../../components/SEO'
 import AppLayout from '../../components/AppLayout'
 import AppHeader from '../../components/AppHeader'
 import BaseButton from '../../components/BaseButton'
-import FieldInput from './FieldInput'
+import FieldInput from '../../components/FieldInput'
 import questions from './questions'
 
 const QuestionnairePage = () => {

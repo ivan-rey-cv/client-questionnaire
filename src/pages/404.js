@@ -6,28 +6,30 @@ import SEO from '../components/SEO'
 import AppLayout from '../components/AppLayout'
 import AppHeader from '../components/AppHeader'
 
-const NotFoundPage = () => (
-  <AppLayout>
-    <SEO title="404: Not found" />
+const NotFoundPage = () => {
+  return (
+    <AppLayout>
+      <SEO title="404: Not found" />
 
-    <AppHeader headerType="normal" hideDescription={true} />
+      <AppHeader headerType="normal" hideDescription={true} />
 
-    <Body>
-      <ErrorBanner>
-        <h1>404</h1>
-        <h4>NOT FOUND</h4>
-      </ErrorBanner>
+      <Body>
+        <ErrorBanner>
+          <h1>404</h1>
+          <h4>NOT FOUND</h4>
+        </ErrorBanner>
 
-      <MarginedDiv>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </MarginedDiv>
+        <MarginedDiv>
+          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        </MarginedDiv>
 
-      <MarginedDiv>
-        <Link to="/">Go to Home page instead!</Link>
-      </MarginedDiv>
-    </Body>
-  </AppLayout>
-)
+        <MarginedDiv>
+          <Link to="/">Go to Home page instead!</Link>
+        </MarginedDiv>
+      </Body>
+    </AppLayout>
+  )
+}
 
 const Body = styled.section`
   padding: 2rem 1rem;

@@ -16,7 +16,7 @@ function AppHeader({ headerType: type, hideDescription = false }) {
   )
 
   return (
-    <header>
+    <Header>
       <Nav type={type}>
         <CenteredDiv>
           <h1>{site.siteMetadata.title}</h1>
@@ -31,9 +31,13 @@ function AppHeader({ headerType: type, hideDescription = false }) {
           </Description>
         )}
       </CenteredDiv>
-    </header>
+    </Header>
   )
 }
+
+const Header = styled.header`
+  z-index: 1000;
+`
 
 const Nav = styled.nav`
   ${props => {

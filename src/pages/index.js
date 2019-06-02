@@ -7,19 +7,21 @@ import AppLayout from '../components/AppLayout'
 import AppHeader from '../components/AppHeader'
 import BaseButton from '../components/BaseButton'
 
-const IndexPage = () => (
-  <AppLayout>
-    <SEO title="Home" />
+const IndexPage = () => {
+  return (
+    <AppLayout>
+      <SEO title="Home" />
 
-    <AppHeader headerType="hero-banner" />
+      <AppHeader headerType="hero-banner" />
 
-    <ButtonContainer>
-      <BaseButton as={Link} to="/questionnaire">
-        Start
-      </BaseButton>
-    </ButtonContainer>
-  </AppLayout>
-)
+      <ButtonContainer>
+        <BaseButton as={Link} to="/questionnaire">
+          Start
+        </BaseButton>
+      </ButtonContainer>
+    </AppLayout>
+  )
+}
 
 const ButtonContainer = styled.div`
   margin-top: 1rem;

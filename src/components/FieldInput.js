@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-function FieldInput({ label, name }) {
+function FieldInput({ label, id, name = 'field-input', type = 'text' }) {
   return (
     <List>
-      <Label>{label}</Label>
-      <Input name={name} />
+      <Label htmlFor={id}>{label}</Label>
+      <Input id={id} name={name} type={type} />
     </List>
   )
 }
